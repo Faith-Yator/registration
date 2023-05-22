@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Registration Management System</title>
+	<link rel="stylesheet" type="text/css" href="f.css">
+    <script src="f.js"></script>
+</head>
+<body>
+	<h1>User Registration Management System</h1>
+	<form id="user-form">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+		<label for="id">ID Number:</label>
+		<input type="text" id="id" name="id" required>
+		<label for="country">Country:</label>
+		<select id="country" name="country" required>
+			<option value="" disabled selected>Select Country</option>
+			<option value="Germany">Germany</option>
+			<option value="Canada">Canada</option>
+			<option value="Kenya">Kenya</option>
+			<option value="Australia">Australia</option>
+			<option value="India">India</option>
+		</select>
+		<label for="languages">Languages Spoken:</label>
+		<input type="text" id="languages" name="languages" required>
+		<button type="submit" id="add-btn">Add User</button>
+	</form>
+	<table id="user-table">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>ID Number</th>
+				<th>Country</th>
+				<th>Languages Spoken</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+	
+</body>
+</html>
